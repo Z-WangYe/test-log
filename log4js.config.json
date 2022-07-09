@@ -1,13 +1,8 @@
 {
   "appenders": {
     "default": {
-      "type": "@aep/aep-logging/lib/DateRollingFileAppender",
-      "filename": "log//default.log",
-      "folderDate": "yyyy-MM-dd",
-      "daysToKeep": 1,
-      "keepFileExt": true,
-      "maxLogSize": 126976,
-      "backups": 10
+      "type": "file",
+      "filename": "log//default.log"
      
     }
    
