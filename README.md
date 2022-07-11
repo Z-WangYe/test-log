@@ -1,4 +1,10 @@
 # test-log
 
 
-# In the latest version of log4js, the log log file generated on the windows system will be compressed by 7z or winRar when it is occupied, but the log file and folder can be deleted.When using the system's own compression function, but it can be compressed.How to solve it?
+## 背景
+
+- 公司产品需要在记录日志的时候，还提供使用压缩工具（7z或者winRar等）对日志文件打成压缩包，然后上传到服务器
+
+## 思路
+
+- 文件日志被占用的时候，使用压缩工具进行压缩会报错文件被占用
